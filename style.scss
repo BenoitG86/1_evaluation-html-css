@@ -1,0 +1,58 @@
+// Initialisation des variables
+
+@import "partials/_variables.scss";
+
+// Initialisation des paramètres à défaut
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+// En-tête du site
+
+header {
+    background-color: $secondary-color;
+
+    p {
+        color: $bg-color;
+    }
+
+
+    nav {
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            display: flex;
+            text-decoration: none;
+            color: $bg-color;
+        }
+
+        a:hover {
+            color: $primary-color;
+            cursor: pointer;
+        }
+
+        .estimate {
+            background-color: $primary-color;
+        }
+    }
+
+}
+
+// Pied de page du site
+
+footer {
+    .contactFooter {
+        background-color: $secondary-color;
+        color: $bg-color;
+    }
+}
